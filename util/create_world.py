@@ -80,3 +80,7 @@ for p in players:
   p.currentRoom=r_outside.id
   p.save()
 
+
+
+all_rooms = Room.objects.all()
+print(all_rooms)
