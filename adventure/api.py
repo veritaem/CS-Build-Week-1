@@ -14,14 +14,10 @@ import json
 @csrf_exempt
 @api_view(["GET"])
 def create(request):
-    user = request.user
-    player = user.player
-    player_id = player.id
-    uuid = player.uuid
-    rooms = World.generate_rooms
+    pass
     # Create rooms end point
     # Sends the client an array of all of our generated rooms after the room generator algorithm is run
-    return JsonResponse({'uuid': uuid, 'name':player.user.username, 'rooms': rooms}, safe=True)
+    # return JsonResponse({'uuid': uuid, 'name':player.user.username, 'title':room.title, 'description':room.description, 'players':players}, safe=True)
 
 @csrf_exempt
 @api_view(["GET"])
