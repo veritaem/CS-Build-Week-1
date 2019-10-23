@@ -14,9 +14,14 @@ django-cors-headers = "*"
 gunicorn = "*"
 django-heroku = "*"
 django-rest-api = "*"
+<<<<<<< HEAD
 psycopg2 = "*"
+=======
+psycopg2-binary = "*"
+>>>>>>> 68e30020e4d6ee8234c015b51d45c8ab03e799b4
 
 [dev-packages]
+pylint = "*"
 
 [requires]
 python_version = "3.7"
