@@ -80,7 +80,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
-    },
+    }, 
 ]
 
 WSGI_APPLICATION = 'adv_project.wsgi.application'
@@ -151,3 +151,4 @@ STATIC_URL = '/static/'
 
 import django_heroku
 django_heroku.settings(locals())
+
