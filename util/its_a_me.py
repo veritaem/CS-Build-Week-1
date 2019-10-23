@@ -93,7 +93,7 @@ class World:
             elif choice == 'w' and i.x-1 > -1:
                     connect_rom = self.grid[i.y][i.x-1]
                     i.connect_rooms(connect_rom, choice)
-            vari = {'id':i.id, 'desc':i.description, 'name':i.name, 'x':i.x, 'y':i.y, 'n':i.n_to, 's':i.s_to, 'e':i.e_to, 'w': i.w_to}
+            vari = {'id':i.id, 'desc':i.description, 'name':i.name, 'x':i.x, 'y':i.y, 'n':[i.n_to], 's':[i.s_to], 'e':[i.e_to], 'w':[i.w_to]}
             dic.append(vari)
             counter += 1
 
